@@ -14,7 +14,11 @@
 
  */
 // Test variables
-
+var activeQuests: Set<String> = ["Fetch Gemstones", "Big Boss","The Undertaker", "Granny Needs","Firewoods"]
+var completedQuests: Set<String> = ["Big Boss","All-4-One","The Hearafter"]
 
 // Set operations
-
+var commonQuests = activeQuests.intersection(completedQuests)
+var diffrenceQuest = activeQuests.symmetricDifference(completedQuests)
+var allQuests = activeQuests.union(completedQuests)
+var clipQuests = activeQuests.subtracting(completedQuests)

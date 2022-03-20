@@ -14,10 +14,16 @@
 
  */
 // Creating sets
-
+var activeQuests: Set<String> = ["Fetch Gemstones", "Big Boss","The Undertaker", "Granny Needs","Firewoods"]
 
 // Inserting and removing elements
 
+activeQuests.insert("Only the strong")
+activeQuests.remove("The Undertaker")
+print(activeQuests)
 
 // More common methods
-
+activeQuests.contains("All-4-One")
+activeQuests.sorted()
+// Sets only stored hashable values, all swift types are hashable. 
+activeQuests
