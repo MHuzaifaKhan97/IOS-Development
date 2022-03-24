@@ -21,7 +21,37 @@ for stringCharacters in playerGreeting {
     print(stringCharacters)
 }
 
+for armor in armorTypes{
+    print(armor)
+}
+
 // Dictionary key-value pairs
 
+for weaponKey in weapons.keys{
+    print(weaponKey)
+}
+for weaponValues in weapons.values{
+    print(weaponValues)
+}
+
+for (weapon, damage) in weapons{
+    print("\(weapon): \(damage)")
+}
 // Using ranges
 
+// closed range
+for indexNumber in 1...10{
+    print(indexNumber)
+}
+// one sided range
+for armor in armorTypes[1...]{
+    print(armor)
+}
+// half open
+for index in 1..<10{
+    print(index)
+}
+
+for armor in armorTypes[..<armorTypes.count]{
+    print(armor)
+}

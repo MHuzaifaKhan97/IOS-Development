@@ -22,7 +22,14 @@ let shopItems = ["Magic wand": 10, "Iron Helm": 5, "Excalibur": 1000]
 let currentGold = 16
 
 // Guard statement with for-in loop
-
+// strict version of if
+for (item, price) in shopItems{
+    guard currentGold >= price else{
+        print("you can't afford the \(item)")
+        continue
+    }
+    print("Go Ahead the \(item) is for \(price) gold")
+}
 
 // Guard check for specific item
 
